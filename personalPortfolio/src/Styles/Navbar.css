@@ -1,6 +1,6 @@
 
 
-.navbar{
+.navbar-container{
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -10,20 +10,26 @@
     font-weight: bold;
 }
 
-.navbar .logo{
+.navbar .logo-container h3{
     width: auto;
     padding-top: 20px;
     justify-content: center;
     color: white;
 }
-.navbar .navLinks{
-    width: 50%;
-    display: flex;
-    margin: 0 20px;
-    padding:0 20px;
-    
+
+.navbar .links-container{
+    align-items: center;
 }
 
-.navbar .navLinks a{
-    padding: 20px;
+.links-container .navLinks{
+    display: flex;
+    margin-top: 22px;
+}
+
+
+.navLinks li a{
+    text-decoration: none;
+    color: white;
+    padding: 30px;
+
 }
