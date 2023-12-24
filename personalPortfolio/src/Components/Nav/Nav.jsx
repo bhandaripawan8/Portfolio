@@ -12,7 +12,6 @@ const Nav = () => {
   const handleNavClick = (navId) => {
     setActiveNav(navId);
   };
-
   return (
     <nav>
       <a href="#" onClick={() => handleNavClick('#')} className={activeNav === '#' ? 'active': ''}><IoHomeOutline/></a>
