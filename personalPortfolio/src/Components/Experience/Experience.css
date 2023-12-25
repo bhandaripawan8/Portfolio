@@ -62,11 +62,12 @@
 
 /* Media queries (for small devices-mobile phones) */
 @media screen and (max-width: 600px){
-        .experience_container{
+        #Experience .experience_container{
+            grid-template-columns: 1fr;
             gap: 1rem;
         }
         .experience_container > div{
-            width: 100%;
-            padding: 2rem 1rem;
+            width: 90%;
+            padding: 2rem 2rem;
         }
     }

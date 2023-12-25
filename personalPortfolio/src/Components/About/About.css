@@ -95,9 +95,12 @@
         }
         .about_cards{
             grid-template-columns: 1fr 1fr;
+            width: 95%;
             gap: 1rem;
         }
-        .about_content{
+
+
+         .about_content{
             text-align: center;
         }
         .about_content p{

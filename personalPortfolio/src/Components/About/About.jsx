@@ -31,10 +31,10 @@ const About = () => {
               <small>Master's in Business Administration</small>
             </article>
           </div>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus repellat accusantium numquam et necessitatibus suscipit velit ipsa id dolor quas voluptates dolores ex consequuntur, minima, veniam eum est repudiandae hic?
-          </p>
-          <a href="#contact" className='btn btn-primary'>Let's talk</a>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus repellat accusantium numquam et necessitatibus suscipit velit ipsa id dolor quas voluptates dolores ex consequuntur, minima, veniam eum est repudiandae hic?
+            </p>
+            <a href="#contact" className='btn btn-primary'>Let's talk</a>
         </div>
       </div>
     </section>
