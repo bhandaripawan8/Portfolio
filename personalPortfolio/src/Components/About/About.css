@@ -75,7 +75,8 @@
 /* Media queries (for medium devices-tablets) */
 @media screen and (max-width: 1024px){
     .about_container{
-        height: 68vh;
+        grid-template-columns: 1fr;
+        gap: 0;
     }
     .about_me{
         width: 50%;
