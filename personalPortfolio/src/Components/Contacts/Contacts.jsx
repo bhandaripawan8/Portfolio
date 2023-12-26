@@ -4,8 +4,24 @@ import { MdOutlineMarkEmailUnread } from "react-icons/md";
 import { RiMessengerLine } from "react-icons/ri";
 import { FaWhatsapp } from "react-icons/fa6";
 
+// email js
+import { useRef } from 'react';
+import emailjs from 'emailjs-com';
+
 
 const Contacts = () => {
+  const form = useRef();
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_8az6edr', 'template_25Ijvhf', form.current, 'kRt7fToSkyUqreNog')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {  
+          console.log(error.text);
+      });
+      e.target.reset()
+  };
   return (
     <section id='Contact'>
       <h5>Get In Touch</h5>
@@ -33,7 +49,7 @@ const Contacts = () => {
               </article>
           </div>
           {/* start of form */}
-          <form action="">
+          <form ref={form} onSubmit={sendEmail}>
             <input type="text" name='name' placeholder='Your Full Name' required />
             <input type="text" name='email' placeholder='Your Email' required />
             <textarea name="message" rows="7" placeholder='Your Message' required></textarea>

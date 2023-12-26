@@ -23,7 +23,6 @@ function App() {
       <Testimonials/>
       <Contacts/>
       <Footer/>
-      <h2>Welcome to Pawan's Portfolio</h2>
     </div>
     </>
 
